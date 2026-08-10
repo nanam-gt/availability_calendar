@@ -11,3 +11,9 @@
 - 実装内容: 日本語曜日の1か月カレンダー、前月・翌月移動、現在月より前と3か月先超過の移動制限、スマホ7列表示を実装。
 - 変更ファイル: `public/js/calendar-core.js`, `public/js/public-calendar.js`, `public/css/app.css`, `public/index.html`。
 - 確認方法: `/` で月送りボタン、375px幅、月初位置、月末表示を確認。
+
+## Phase 3
+
+- 実装内容: D1 binding、`availability` migration、公開API `GET /api/availability?from=YYYY-MM-DD&to=YYYY-MM-DD` を実装。
+- 変更ファイル: `wrangler.jsonc`, `migrations/0001_create_availability.sql`, `src/index.ts`。
+- 確認方法: D1 migration 後、日付範囲付きで `/api/availability` を呼び出し、JSON が返ることを確認。
