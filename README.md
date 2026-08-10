@@ -4,6 +4,8 @@ Cloudflare Workers + D1 で動作する、宿泊空き状況の公開カレン�
 
 GitHub: https://github.com/nanam-gt/availability_calendar
 
+Production: https://ichibanboshi-availability-calendar.ichibanboshi.workers.dev
+
 ## 構成
 
 ```text
