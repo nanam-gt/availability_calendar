@@ -35,3 +35,9 @@
 - 実装内容: 管理画面で日付を1つ選択し、`available`、`waiting`、`unavailable`、未設定戻しを保存できるように実装。
 - 変更ファイル: `src/index.ts`, `public/admin.html`, `public/js/admin-calendar.js`。
 - 確認方法: `/admin` で1日だけ選択して各ステータス保存、公開画面への反映、未設定戻しを確認。
+
+## Phase 7
+
+- 実装内容: 管理画面で複数日をタップ選択・解除し、一括でステータス更新または未設定戻しできるように実装。
+- 変更ファイル: `src/index.ts`, `public/admin.html`, `public/js/admin-calendar.js`, `public/css/app.css`。
+- 確認方法: スマホ幅で複数日を選択し、一括保存後に公開画面とAPIレスポンスを確認。
