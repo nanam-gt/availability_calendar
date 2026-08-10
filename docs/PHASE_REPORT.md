@@ -17,3 +17,9 @@
 - 実装内容: D1 binding、`availability` migration、公開API `GET /api/availability?from=YYYY-MM-DD&to=YYYY-MM-DD` を実装。
 - 変更ファイル: `wrangler.jsonc`, `migrations/0001_create_availability.sql`, `src/index.ts`。
 - 確認方法: D1 migration 後、日付範囲付きで `/api/availability` を呼び出し、JSON が返ることを確認。
+
+## Phase 4
+
+- 実装内容: 公開画面に `○ 空き`、`△ キャンセル待ち`、`× 予約不可` を記号とテキストで表示。未設定日は日付のみ、過去日は薄く表示してステータス非表示。
+- 変更ファイル: `public/js/calendar-core.js`, `public/js/public-calendar.js`, `public/css/app.css`。
+- 確認方法: API から各 status を返し、公開カレンダー上の表示と過去日の非表示を確認。
