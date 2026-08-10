@@ -88,6 +88,11 @@ h2 {
   margin: 0;
 }
 
+.notice-top {
+  color: #8f463d;
+  font-weight: 700;
+}
+
 .calendar-panel {
   padding: 18px 0 8px;
 }
