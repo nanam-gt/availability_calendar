@@ -23,3 +23,9 @@
 - 実装内容: 公開画面に `○ 空き`、`△ キャンセル待ち`、`× 予約不可` を記号とテキストで表示。未設定日は日付のみ、過去日は薄く表示してステータス非表示。
 - 変更ファイル: `public/js/calendar-core.js`, `public/js/public-calendar.js`, `public/css/app.css`。
 - 確認方法: API から各 status を返し、公開カレンダー上の表示と過去日の非表示を確認。
+
+## Phase 5
+
+- 実装内容: `/admin`、共通パスワードログイン、署名付き HttpOnly/Secure/SameSite Cookie セッション、ログアウト、管理APIの認証チェックを実装。
+- 変更ファイル: `src/index.ts`, `public/admin.html`, `public/js/admin-calendar.js`。
+- 確認方法: `/admin` で正しいパスワードと誤ったパスワード、ログアウト、未認証時の管理API 401 を確認。
