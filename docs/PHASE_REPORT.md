@@ -41,3 +41,9 @@
 - 実装内容: 管理画面で複数日をタップ選択・解除し、一括でステータス更新または未設定戻しできるように実装。
 - 変更ファイル: `src/index.ts`, `public/admin.html`, `public/js/admin-calendar.js`, `public/css/app.css`。
 - 確認方法: スマホ幅で複数日を選択し、一括保存後に公開画面とAPIレスポンスを確認。
+
+## Phase 8
+
+- 実装内容: 公開画面下部に `宿泊予約を申し込む` の通常リンクを配置し、`RESERVATION_URL` からリンク先を変更できるように実装。Google API や認証連携は未使用。
+- 変更ファイル: `src/index.ts`, `public/index.html`, `public/js/public-calendar.js`, `wrangler.jsonc`。
+- 確認方法: `/api/config` の `reservationUrl` と公開画面ボタンのリンク先を確認。
