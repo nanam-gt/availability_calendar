@@ -29,3 +29,9 @@
 - 実装内容: `/admin`、共通パスワードログイン、署名付き HttpOnly/Secure/SameSite Cookie セッション、ログアウト、管理APIの認証チェックを実装。
 - 変更ファイル: `src/index.ts`, `public/admin.html`, `public/js/admin-calendar.js`。
 - 確認方法: `/admin` で正しいパスワードと誤ったパスワード、ログアウト、未認証時の管理API 401 を確認。
+
+## Phase 6
+
+- 実装内容: 管理画面で日付を1つ選択し、`available`、`waiting`、`unavailable`、未設定戻しを保存できるように実装。
+- 変更ファイル: `src/index.ts`, `public/admin.html`, `public/js/admin-calendar.js`。
+- 確認方法: `/admin` で1日だけ選択して各ステータス保存、公開画面への反映、未設定戻しを確認。
