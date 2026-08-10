@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <title>いちばん星ビレッジ 宿泊空き状況</title>
+    <link rel="stylesheet" href="/css/app.css" />
+    <script type="module" src="/js/public-calendar.js"></script>
+  </head>
+  <body>
+    <main class="page-shell public-page">
+      <header class="site-header">
+        <p class="eyebrow">いちばん星ビレッジ</p>
+        <h1>宿泊 空き状況</h1>
+        <p class="lead">一日一組限定の宿泊について、公開用の空き状況を月ごとにご確認いただけます。</p>
+      </header>
+
+      <section class="notice notice-top" aria-label="空き状況の注意">
+        <p>※表示している空き状況はリアルタイムではありません。予約申し込み後、スタッフが最新の予約状況を確認し、予約可否をご連絡いたします。</p>
+      </section>
+
+      <section class="calendar-panel" aria-label="宿泊空き状況カレンダー">
+        <div class="month-toolbar">
+          <button class="icon-button" id="prevMonth" type="button" aria-label="前の月へ">‹</button>
+          <h2 id="monthLabel" aria-live="polite"></h2>
+          <button class="icon-button" id="nextMonth" type="button" aria-label="次の月へ">›</button>
+        </div>
+        <div class="weekday-grid" aria-hidden="true">
+          <span>日</span><span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span>土</span>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+        <p class="message" id="calendarMessage" role="status"></p>
+      </section>
+
+      <section class="legend" aria-label="凡例">
+        <span><strong class="mark available">○</strong> 空き</span>
+        <span><strong class="mark waiting">△</strong> キャンセル待ち</span>
+        <span><strong class="mark unavailable">×</strong> 予約不可</span>
+      </section>
+
+      <section class="notice">
+        <p>空き表示の日程でも、ご予約状況によっては受付できない場合があります。お申し込み後、スタッフからのご案内をもって予約確定となります。</p>
+      </section>
+
+      <a class="primary-link" id="reservationLink" href="https://docs.google.com/forms/" rel="noopener noreferrer" target="_blank">宿泊予約を申し込む</a>
+    </main>
+  </body>
+</html>

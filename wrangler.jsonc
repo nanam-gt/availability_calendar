@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ichibanboshi-availability-calendar",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-10",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "RESERVATION_URL": "https://docs.google.com/forms/",
+    "MAX_FUTURE_MONTHS": "3"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ichibanboshi_availability",
+      "database_id": "replace-with-your-d1-database-id"
+    }
+  ]
+}
