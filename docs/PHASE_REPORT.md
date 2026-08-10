@@ -47,3 +47,9 @@
 - 実装内容: 公開画面下部に `宿泊予約を申し込む` の通常リンクを配置し、`RESERVATION_URL` からリンク先を変更できるように実装。Google API や認証連携は未使用。
 - 変更ファイル: `src/index.ts`, `public/index.html`, `public/js/public-calendar.js`, `wrangler.jsonc`。
 - 確認方法: `/api/config` の `reservationUrl` と公開画面ボタンのリンク先を確認。
+
+## Phase 9
+
+- 実装内容: 自然、里山、温かみ、落ち着き、余白を意識した配色とレイアウトに調整。スマホ優先で横スクロールなし、管理画面も同じ世界観で統一。
+- 変更ファイル: `public/css/app.css`, `public/index.html`, `public/admin.html`。
+- 確認方法: 375px、390px、768px、1024px以上で文字の収まり、カレンダー7列、ボタン配置を確認。
