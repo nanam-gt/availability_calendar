@@ -53,3 +53,9 @@
 - 実装内容: 自然、里山、温かみ、落ち着き、余白を意識した配色とレイアウトに調整。スマホ優先で横スクロールなし、管理画面も同じ世界観で統一。
 - 変更ファイル: `public/css/app.css`, `public/index.html`, `public/admin.html`。
 - 確認方法: 375px、390px、768px、1024px以上で文字の収まり、カレンダー7列、ボタン配置を確認。
+
+## Phase 10
+
+- 実装内容: TypeScript 設定を追加し、存在しない Cloudflare Workers 型定義バージョンを修正。JS 構文チェックと TypeScript チェックを実行。
+- 変更ファイル: `package.json`, `package-lock.json`, `tsconfig.json`。
+- 確認方法: `node --check public/js/*.js` と `npm run check` が成功することを確認。
