@@ -46,7 +46,7 @@ input {
 .eyebrow {
   margin: 0 0 8px;
   color: var(--accent);
-  font-size: 0.86rem;
+  font-size: 1.05rem;
   font-weight: 700;
 }
 
@@ -58,7 +58,7 @@ p {
 
 h1 {
   margin-bottom: 10px;
-  font-size: clamp(2rem, 9vw, 3.5rem);
+  font-size: clamp(1.35rem, 4.5vw, 1.9rem);
   line-height: 1.1;
   letter-spacing: 0;
 }

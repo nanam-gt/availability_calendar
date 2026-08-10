@@ -11,7 +11,7 @@ type Status = "available" | "waiting" | "unavailable";
 
 const STATUSES = new Set<Status>(["available", "waiting", "unavailable"]);
 const SESSION_COOKIE = "ibv_session";
-const SESSION_MAX_AGE = 60 * 60 * 12;
+const SESSION_MAX_AGE = 60 * 60 * 24;
 const MAX_DATES_PER_REQUEST = 120;
 
 export default {
