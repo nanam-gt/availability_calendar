@@ -8,7 +8,7 @@
     "binding": "ASSETS"
   },
   "vars": {
-    "RESERVATION_URL": "https://docs.google.com/forms/",
+    "RESERVATION_URL": "https://docs.google.com/forms/d/e/1FAIpQLSexc-nk1ulh0HPqvaiL5ZB4gNHPWTtVEn9yymY08ZX5433weA/viewform",
     "MAX_FUTURE_MONTHS": "3"
   },
   "d1_databases": [
