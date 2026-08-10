@@ -59,3 +59,9 @@
 - 実装内容: TypeScript 設定を追加し、存在しない Cloudflare Workers 型定義バージョンを修正。JS 構文チェックと TypeScript チェックを実行。
 - 変更ファイル: `package.json`, `package-lock.json`, `tsconfig.json`。
 - 確認方法: `node --check public/js/*.js` と `npm run check` が成功することを確認。
+
+## Phase 11
+
+- 実装内容: README に GitHub URL と検証コマンドを追記し、セットアップ、Secrets、D1 migration、ローカル開発、デプロイ、運用手順を整理。
+- 変更ファイル: `README.md`, `docs/PHASE_REPORT.md`。
+- 確認方法: README の手順に沿って `npm install`、migration、`npm run dev`、`npm run check` を実行。

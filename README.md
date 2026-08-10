@@ -2,6 +2,8 @@
 
 Cloudflare Workers + D1 で動作する、宿泊空き状況の公開カレンダーです。予約システムではなく、正式な予約管理は Excel で行います。個人情報は保存しません。
 
+GitHub: https://github.com/nanam-gt/availability_calendar
+
 ## 構成
 
 ```text
@@ -66,6 +68,15 @@ npm run dev
 
 ```bash
 npm run deploy
+```
+
+## 確認
+
+```bash
+npm run check
+node --check public/js/calendar-core.js
+node --check public/js/public-calendar.js
+node --check public/js/admin-calendar.js
 ```
 
 ## 運用
