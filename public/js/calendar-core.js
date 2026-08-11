@@ -1,7 +1,7 @@
 export const STATUS_LABELS = {
   available: { mark: "○", label: "空き" },
   waiting: { mark: "△", label: "キャンセル待ち" },
-  unavailable: { mark: "×", label: "予約不可" },
+  unavailable: { mark: "×", label: "満室" },
 };
 
 export function tokyoToday() {
