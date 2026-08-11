@@ -1,7 +1,7 @@
 export const STATUS_LABELS = {
-  available: { mark: "○", label: "空き" },
-  waiting: { mark: "△", label: "キャンセル待ち" },
-  unavailable: { mark: "×", label: "予約不可" },
+  available: { mark: "○" },
+  waiting: { mark: "△" },
+  unavailable: { mark: "×" },
 };
 
 export function tokyoToday() {
@@ -84,7 +84,7 @@ export function renderCalendar({
       const meta = STATUS_LABELS[status];
       const state = document.createElement("span");
       state.className = `status status-${status}`;
-      state.textContent = `${meta.mark} ${meta.label}`;
+      state.textContent = meta.mark;
       cell.append(state);
     }
 
