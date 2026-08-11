@@ -114,7 +114,7 @@ async function loadMonth() {
   } catch {
     availability = new Map();
     updatedAtByDate = new Map();
-    adminMessage.textContent = "空き状況を読み込めませんでした。";
+    adminMessage.textContent = "予約状況を読み込めませんでした。";
   }
 
   paint();

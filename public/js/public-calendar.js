@@ -59,7 +59,7 @@ async function loadMonth() {
     availability = new Map(data.availability.map((item) => [item.date, item.status]));
   } catch {
     availability = new Map();
-    message.textContent = "空き状況を読み込めませんでした。空きとしては扱わず、時間をおいて再度ご確認ください。";
+    message.textContent = "予約状況を読み込めませんでした。申込可としては扱わず、時間をおいて再度ご確認ください。";
   }
 
   paint();

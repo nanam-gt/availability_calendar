@@ -1,5 +1,5 @@
 export const STATUS_LABELS = {
-  available: { mark: "○", label: "空き" },
+  available: { mark: "○", label: "申込可" },
   waiting: { mark: "△", label: "キャンセル待ち" },
   unavailable: { mark: "×", label: "満室" },
 };

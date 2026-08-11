@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index,follow" />
-    <title>いちばん星ビレッジ 宿泊空き状況</title>
+    <title>いちばん星ビレッジ 宿泊予約状況</title>
     <link rel="stylesheet" href="/css/app.css" />
     <script type="module" src="/js/public-calendar.js"></script>
   </head>
@@ -12,15 +12,15 @@
     <main class="page-shell public-page">
       <header class="site-header">
         <p class="eyebrow">いちばん星ビレッジ</p>
-        <h1>宿泊 空き状況</h1>
-        <p class="lead">空き状況を3ヶ月先までご確認いただけます。</p>
+        <h1>宿泊 予約状況</h1>
+        <p class="lead">予約状況を3ヶ月先までご確認いただけます。</p>
       </header>
 
-      <section class="notice notice-top" aria-label="空き状況の注意">
-        <p>※表示している空き状況はリアルタイムではありません。予約申し込み後、スタッフが最新の予約状況を確認し、予約可否をご連絡いたします。</p>
+      <section class="notice notice-top" aria-label="予約状況の注意">
+        <p>※表示している予約状況はリアルタイムではありません。予約申し込み後、スタッフが最新の予約状況を確認し、予約可否をご連絡いたします。</p>
       </section>
 
-      <section class="calendar-panel" aria-label="宿泊空き状況カレンダー">
+      <section class="calendar-panel" aria-label="宿泊予約状況カレンダー">
         <div class="month-toolbar">
           <button class="icon-button" id="prevMonth" type="button" aria-label="前の月へ">‹</button>
           <h2 id="monthLabel" aria-live="polite"></h2>
@@ -34,7 +34,7 @@
       </section>
 
       <section class="legend" aria-label="凡例">
-        <span><strong class="mark available">○</strong> 空き</span>
+        <span><strong class="mark available">○</strong> 申込可</span>
         <span><strong class="mark waiting">△</strong> キャンセル待ち</span>
         <span><strong class="mark unavailable">×</strong> 満室</span>
       </section>
