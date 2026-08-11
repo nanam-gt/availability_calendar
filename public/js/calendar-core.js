@@ -46,6 +46,7 @@ export function renderCalendar({
   selected = new Set(),
   editable = false,
   symbolOnly = false,
+  closeToday = false,
   onSelect,
 }) {
   grid.replaceChildren();
@@ -63,7 +64,7 @@ export function renderCalendar({
     const date = new Date(month.getFullYear(), month.getMonth(), day);
     const key = dateKey(date);
     const status = availability.get(key);
-    const isPast = key < today;
+    const isPast = closeToday ? key <= today : key < today;
     const cell = document.createElement(editable ? "button" : "div");
     cell.className = "calendar-cell";
     cell.dataset.date = key;

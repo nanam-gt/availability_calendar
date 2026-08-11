@@ -69,5 +69,5 @@ function paint() {
   label.textContent = `${visibleMonth.getFullYear()}年${visibleMonth.getMonth() + 1}月`;
   prev.disabled = monthKey(visibleMonth) <= monthKey(currentMonth);
   next.disabled = monthKey(visibleMonth) >= monthKey(addMonths(currentMonth, maxFutureMonths));
-  renderCalendar({ grid, month: visibleMonth, today, availability, symbolOnly: true });
+  renderCalendar({ grid, month: visibleMonth, today, availability, symbolOnly: true, closeToday: true });
 }
